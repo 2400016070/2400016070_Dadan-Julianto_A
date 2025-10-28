@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My To-Do List</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: white;
+      transition: background-color 0.3s, color 0.3s;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .toolbar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: nowrap;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+
+    .toolbar select,
+    .toolbar button {
+      padding: 5px 10px;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+    }
+
+    input[type="text"] {
+      width: 300px;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      padding: 6px 12px;
+      border: 1px solid #cccccc;
+      background-color: #f4f4f4;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    button:hover {
+      background-color: #ddd;
+    }
+
+    #taskList {
+      list-style: none;
+      padding: 0;
+      width: 320px;
+      text-align: left;
+    }
+
+    #taskList li {
+      padding: 8px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .close {
+      float: right;
+      color: red;
+      cursor: pointer;
+    }
+
+    #addBtn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+#addBtn:hover {
+  background-color: #0056b3;
+}
+  </style>
+</head>
+
+<body>
+  <div class="toolbar">
+    <select id="bgColor">
+      <option value="white">White</option>
+      <option value="lightgray">Light Gray</option>
+      <option value="lightblue">Light Blue</option>
+      <option value="lightgreen">Light Green</option>
+    </select>
+
+    <button id="increaseFont">Increase Font Size</button>
+    <button id="decreaseFont">Decrease Font Size</button>
+    <button id="toggleDark">Toggle Dark Mode</button>
+
+    <select id="fontSelect">
+      <option value="sans-serif">Sans-Serif</option>
+      <option value="verdana">Verdana</option>
+      <option value="arial">Arial</option>
+      <option value="courier">Courier New</option>
+    </select>
+  </div>
+
+  <div class="container">
+    <h2>My To-Do List</h2>
+    <input type="text" id="newTask" placeholder="Add a new task...">
+    <button id="addBtn">Add</button>
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="dom.js"></script>
+</body>
+</html>
