@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page Dadan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+
+  <header class="fixed top-0 left-0 w-full bg-white shadow border-b z-50">
+    <nav class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-600">Porto</h1>
+
+      <ul class="hidden md:flex space-x-6 font-medium">
+        <li><a href="#about" class="hover:text-blue-600">About</a></li>
+        <li><a href="#projects" class="hover:text-blue-600">Projects</a></li>
+        <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+      </ul>
+
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-700" fill="none"
+             viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </nav>
+
+    <div id="mobile-menu" class="hidden flex flex-col items-center bg-white border-t py-4 space-y-3 md:hidden">
+      <a href="#about" class="hover:text-blue-600">About</a>
+      <a href="#projects" class="hover:text-blue-600">Projects</a>
+      <a href="#contact" class="hover:text-blue-600">Contact</a>
+    </div>
+  </header>
+
+  <section class="pt-32 pb-16 text-center">
+    <div class="max-w-3xl mx-auto px-4">
+      <h2 class="text-4xl font-bold mb-4 text-gray-900">Halo, Saya <span class="text-blue-600">Dadan</span></h2>
+      <p class="text-gray-600 mb-8">Mahasiswa Sistem Informasi yang sedang belajar membuat website modern menggunakan Tailwind CSS.</p>
+      <a href="#projects" class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">Lihat Proyek</a>
+    </div>
+  </section>
+
+  <section id="about" class="py-16 px-6 bg-white">
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10">
+      <img src="gmbr 1.jpg" alt="Profil" class="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover shadow-md">
+      <div>
+        <h3 class="text-3xl font-semibold mb-4">Tentang Saya</h3>
+        <p class="text-gray-600 leading-relaxed">
+          Saya Dadan, mahasiswa yang sedang memperdalam pengembangan web menggunakan Tailwind CSS.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="py-16 bg-gray-100 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h3 class="text-3xl font-semibold text-center mb-10">Proyek Saya</h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <article class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
+          <img src="img 1.png" alt="Proyek 1" class="w-full h-48 object-cover">
+          <div class="p-5">
+            <h4 class="text-xl font-semibold mb-2">Number Guessing Game</h4>
+            <p class="text-gray-600 mb-4">Website kasir sederhana menggunakan HTML, JS, dan Tailwind.</p>
+            <a href="#" class="block w-full text-center bg-blue-600 hover:bg-blue-700 text-white py-2 rounded">Lihat Detail</a>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
+          <img src="img 2.png" alt="Proyek 2" class="w-full h-48 object-cover">
+          <div class="p-5">
+            <h4 class="text-xl font-semibold mb-2">To-Do List + UI Controls</h4>
+            <p class="text-gray-600 mb-4">Aplikasi pencatat tugas menggunakan DOM manipulation dengan JS.</p>
+            <a href="#" class="block w-full text-center bg-blue-600 hover:bg-blue-700 text-white py-2 rounded">Lihat Detail</a>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
+          <img src="img 3.png" alt="Proyek 3" class="w-full h-48 object-cover">
+          <div class="p-5">
+            <h4 class="text-xl font-semibold mb-2">Random Facts Generator</h4>
+            <p class="text-gray-600 mb-4">Tampilan modern dengan layout grid dan responsif untuk e-commerce.</p>
+            <a href="#" class="block w-full text-center bg-blue-600 hover:bg-blue-700 text-white py-2 rounded">Lihat Detail</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-16 px-6 bg-white">
+    <div class="max-w-4xl mx-auto text-center">
+      <h3 class="text-3xl font-semibold mb-8">Kontak Saya</h3>
+      <p class="text-gray-600 mb-6">Ingin berdiskusi atau berkolaborasi? Hubungi saya melalui kontak di bawah ini.</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="flex flex-col items-center">
+          <div class="bg-blue-100 text-blue-600 p-4 rounded-full mb-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M16 12H8m0 0l4-4m-4 4l4 4" />
+            </svg>
+          </div>
+          <p>2400016070@webmail.uad.ac.id</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <div class="bg-blue-100 text-blue-600 p-4 rounded-full mb-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 10l1.5 1.5L12 4.5l7.5 7L21 10" />
+            </svg>
+          </div>
+          <p>Jawa Barat</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <div class="bg-blue-100 text-blue-600 p-4 rounded-full mb-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M8 10h.01M12 14l9-5-9-5-9 5 9 5z" />
+            </svg>
+          </div>
+          <p>+62 812-3456-7890</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-gray-900 text-gray-300 text-center py-6">
+    <p>© 2025 Dadan Julianto. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
